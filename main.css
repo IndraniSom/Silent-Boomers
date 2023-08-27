@@ -796,7 +796,7 @@ p {
   color: black;
   text-align: center;
 }
-
+/*about us*/
 #aboutus
 {
   background: transparent;
@@ -876,7 +876,20 @@ p {
     z-index: 2;
   }
 }
-
+.para p{
+  margin-left: 850px;
+  margin-right: 200px;
+  margin-top: -250px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  background: transparent;
+}
 
 .waviy {
   position: relative;

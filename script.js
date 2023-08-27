@@ -23,5 +23,9 @@ $("nav ul li").click(function(){
     $("nav ul li").not(this).removeClass("active");
     
   });
-  
+  const fname=document.getElementById("fname");
+  const lname=document.getElementById("lname");
+  const email=document.getElementById("email");
+  const phone=document.getElementById("phone");
+  const submit=document.getElementById("submit");
   

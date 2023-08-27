@@ -478,16 +478,16 @@ p {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	width: 65vmin;
-	height: 25em;
+	height: 20em;
 	margin: 2rem auto;
-	border: 8px solid black;
+	border: 2px solid black;
 	background: transparent;
 	transition: 0.3s ease-in-out;
 	position: relative;
 	overflow: hidden;
 }
 .overlay {
-	position: relative;
+	position: static;
 	display: flex;
 	width: 100%;
 	height: 100%;
@@ -514,7 +514,6 @@ p {
 	right: 0;
 	width: 60vmin;
 	height: 100%;
-	background-image: url("Images/community/book.png");
 	background-size: cover;
 	transition: 0.3s ease-in-out;
   
@@ -522,9 +521,10 @@ p {
 }
 
 .inset {
-	max-width: 50%;
-	margin: 0.25em 1em 1em 0;
-	border-radius: 0.25em;
+	max-width: 100%;
+	margin-top: -20px;
+  margin-right: 0px;
+	border-radius: 1em;
 	float: left;
   background: transparent;
 }
@@ -590,7 +590,7 @@ p {
 /* Animations and timing delays */
 .animate {
   background: transparent; 
-  margin-right: 71px;
+  margin-right: 52px;
 	animation-duration: 0.7s;
 	animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
 	animation-fill-mode: backwards;
@@ -767,7 +767,7 @@ p {
   /* duration */
   display: grid;
   width: 220px;
-  margin-left: 350px;
+  margin-left: 260px;
   margin-top: 200px;
 }
 
@@ -835,19 +835,20 @@ p {
     z-index: 2;
   }
 }
-.para p{
-  margin-left: 850px;
+.para ul{
+  margin-left: 820px;
   margin-right: 200px;
   margin-top: -250px;
-  font-size: 20px;
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
+  font-size: 25px;
+  font-family:'Josefin Sans', sans-serif;
+  color: rgb(183, 194, 198);
   text-align: center;
-  font-weight: 500;
-  line-height: 1.5;
+  font-weight: 5000;
+  line-height: 1;
   letter-spacing: 1px;
   margin-bottom: 50px;
   background: transparent;
+  width:400px
 }
 
 .waviy {

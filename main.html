@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="css/unpkg.com_swiper@8.1.6_swiper-bundle.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+
     <title>Silent Boomers</title>
 </head>
 <header>
@@ -223,13 +223,9 @@
             <img src="Images\aboutuspictures\dadubonding3.jpg" alt="a girl">
           </div>
         <div class="para">
-          <ul>
-            <li>Empowering seniors for a vibrant life.</li>
-            <li>We're here to enrich, support, and build a strong community.</li>
-            <li>Passionate about seniors' well-being and independence.</li>
-            <li>Join us in celebrating their journeys, fostering independence.</li>
-            <li>Together, we shape fulfilling lives for seniors.</li>
-          </ul>
+          <p>
+            Welcome to our website dedicated to assisting senior citizens! Our mission is to create a supportive and enriching environment for older adults, fostering their well-being and independence. With a deep understanding of the unique challenges they face, we aim to provide valuable resources, services, and a sense of community. Our team is passionate about making a positive impact in the lives of seniors, and we're committed to building a platform that empowers them to lead fulfilling lives.
+          </p>
         </div>
       
     </section>
@@ -290,9 +286,9 @@
          </div>
           <h3>Connect With Us</h3>
           <br>
-          <form action="" method="post">
-        <input type="text" name="name" required placeholder="Enter your name">
-        <input type="email" name="email" required placeholder="Enter your email-id">
+          <form action="#" method="post"class="form-contact">
+        <input type="text" name="name" required placeholder="Enter your name....">
+        <input type="email" name="email" required placeholder="Enter your email-id.....">
         <input type="text" required placeholder="Go ahead, We are listening" class="form-bn"  >
         
         <input type="submit" name="submit" value="submit"  id="button">
@@ -303,14 +299,42 @@
 <footer>
 
 </footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-      AOS.init({offset:300,
-            duration:800});
-      </script>
-      <script src="script.js"></script>
-      <script src="js/unpkg.com_swiper@8.1.6_swiper-bundle.min.js">
+       const submitButton = document.getElementById("button");
 
-      </script>
+submitButton.addEventListener('click', async (e) => {
+    e.preventDefault();
+  const name = document.getElementById("name")
+  const email = document.getElementById("email")
+  const message = document.getElementById("message")
+  const SecureToken = "6d7b966f-335d-40d7-9e97-a96a550270d3"; // Replace with your actual SecureToken
+
+  try {
+    const EMAIL=await Email.send({
+      SecureToken: SecureToken,
+      To: email.value,
+      From: 'indranisom39@gmail.com',
+      Subject: "Confirmation Mail",
+      Body: `Thank you, ${name.value}, for connecting with us. We will get back to you soon.\n\nMessage: ${message.value}`
+    });
+    console.log(EMAIL);
+
+    alert("Email sent successfully!");
+  } catch (error) {
+    console.error("Error sending email:", error);
+    alert("An error occurred while sending the email.");
+
+  }
+  finally{
+    name.value='';
+    email.value='';
+    message.value='';
+    
+  }
+});
+
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -154,7 +154,7 @@ header {
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: auto 80%;
-  background-image: url(./Images/home/Group\ 40.png);
+  background-image: url(Images/home/Group\ 40.png);
 }
 
 #listeners
@@ -173,50 +173,7 @@ header {
   overflow: hidden;
 }
 
- /* .e-charcter {
-  text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-  text-transform: lowercase;
-  background-image: linear-gradient( -225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100% );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 233% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite, parallax 10s linear infinite;
-  font-size: 45px;
-  text-decoration: none;
-  transition: color 0.3s;
-  transform-style: preserve-3d;
-}
-
-.e-charcter:hover {
-  color: #ff1361;
-}
-
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
-
-@keyframes parallax {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-20vh);
-  }
-} */ 
+ 
 #text1 {   
   font-size: 3.6vw;
     height: 48px;

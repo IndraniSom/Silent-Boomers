@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-   
-    
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/unpkg.com_swiper@8.1.6_swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Silent Boomers</title>
-  </head>
-  <body>
-      <header>
-      <section id="Home">
+</head>
+<header>
           <div id="navbar-animmenu">
               <ul class="show-dropdown main-navbar">
                   
@@ -33,14 +32,24 @@
                   <li>
                       <a href="#contact us"><i class="far fa-chart-bar"></i>Contact Us</a>
                   </li>
-                  
-                  
+                  <div class="btn-container">
+                    <button class="login-signup-btn" id="loginSignupBtn">Log In</button>
+                    <button class="login-signup-btn signup-btn">Sign Up</button>
+                  </div>
+                  <script src="script.js"></script>
               </ul>
           </div>
+ </header>
+          <body>
+          <section id="Home">
           <div class="head">
               <div class="parallax">
                   <div id="text"></div>
-                  
+                  <!-- <div class="video-container">
+                      <video autoplay muted loop>
+                        <source src="/Loading_Minds/Images/home/animation_llp4c8tv.mp4" type="video/mp4">
+                      </video>
+                    </div> -->
               </div>
               
           </div>
@@ -60,12 +69,14 @@
                           <div class="button__drow1"></div>
                           <div class="button__drow2"></div>
                       </a>
+
                   </div>
               </div>
           </div>
           <div id="text1" data-aos="fade-right" data-aos-easing="ease-out-cubic"
           data-aos-duration="2000" >Need to talk to</div>
           <div data-aos="fade-right" id="text2">someone?</div>
+
       </section>
 
 
@@ -161,8 +172,7 @@
     window.location.href = "chat.html";
   });
 </script>
-
-</section>
+    </section>
     <section id="tutorials">
       <div class="void" id="void">
         <div class="crop">
@@ -192,8 +202,6 @@
         <div class="mask"></div>
         <div class="center-circle"></div>
     </section>
-
-    
 
     <section id="aboutus">
       <div class="waviy">
@@ -241,13 +249,13 @@
             <img src="./Images/our team/heya.jpeg" alt=""/><span class="name">Heya Banerjee</span>
           </div>
           <div class="profile">
-            <img src="./Images/our team/sritama.jpeg" alt=""/><span class="name">Sritama Kafra</span>
+            <img src="./Images/our team/sritama.jpeg" alt=""/><span class="name">Sritama Karfa</span>
           </div>
         </div>
         </section>
       <section id="contactus">
         <div class="form-container">
-          <h3>Get Connected With Us</h3>
+          <h3>Connect With Us</h3>
           <br>
           <form action="" method="post">
         <input type="text" name="name" required placeholder="Enter your name">
@@ -258,7 +266,7 @@
       </form>
       </div>
       </section>
-</header>
+    </body>
 <footer>
 
 </footer>

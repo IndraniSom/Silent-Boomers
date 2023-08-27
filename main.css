@@ -65,11 +65,13 @@ header {
 }
 
 #navbar-animmenu ul {
-  padding: 0;
-  margin: 0;
-  border-radius: 32px;
-  display: flex;
-  justify-content: space-between;
+  padding: 0px;
+    margin: 0px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row;
+    align-items: center;
 }
 
 #navbar-animmenu ul li {
@@ -82,7 +84,7 @@ header {
   text-decoration: none;
   font-size: 20px; /* Reduce font size */
   line-height: 30px; /* Adjust line height */
-  padding: 2px 15px; /* Adjust padding */
+  padding: -9px 15px; /* Adjust padding */
   transition: color 0.6s, transform 0.5s;
   position: relative;
 }
@@ -910,7 +912,7 @@ p {
 }
 #ourteam {
   margin: 0;
-  min-height: 100vh;
+  min-height: 85vh;
   justify-content: center;
   align-items: center;
   background:transparent;
@@ -943,7 +945,7 @@ p {
   justify-content: center;
   align-items: center; /* Add this line to vertically align items */
   width: 80%;
-  max-width: 1200px;
+  max-width: 1198px;
   margin-left: 100px;
   margin: 0 auto;
   background: transparent;
@@ -967,7 +969,7 @@ p {
 }
 
 .profile img {
-  max-width: 100%;
+  max-width: 90%;
   border-radius: 50%;
   filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
   cursor: pointer;
@@ -1130,7 +1132,7 @@ button:active {
 {
   background: transparent;
   margin-top: 100px;
-  margin-left: 100px;
+  margin-left: 60px;
   margin-bottom: 100px;
 }
 

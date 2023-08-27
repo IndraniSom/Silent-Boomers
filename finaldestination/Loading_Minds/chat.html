@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="chat.css">
+  <title>WhatsApp-Like Chat</title>
+</head>
+<body>
+  <div class="container">
+    <div class="community-section">
+      <h2>Communities</h2>
+      <ul class="community-list">
+        <li class="community-item" data-community="Community 1">Community 1</li>
+        <li class="community-item" data-community="Community 2">Community 2</li>
+        <li class="community-item" data-community="Community 3">Community 3</li>
+        <li class="community-item" data-community="Community 4">Community 4</li>
+        <!-- Add more communities here -->
+      </ul>
+    </div>
+    <div class="chat-section">
+      <div class="chat-container">
+        <div class="chat-header" id="chatHeader">Select a Community</div>
+        <div class="chat-messages" id="chatMessages">
+          <!-- Messages will be added here -->
+        </div>
+        <div class="voice-input">
+          <button id="startRecording">
+            <img class="voice-icon" src="./Images/New folder/microphone-black-shape.png" alt="Microphone Icon">
+            Start Recording
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="chat.js"></script>
+</body>
+</html>

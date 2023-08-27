@@ -48,7 +48,7 @@ body {
 /* Header styling */
 header {
   position: sticky;
-  top:15px;
+  top:0;
   z-index: 1000;
   background-color: rgb(17, 6, 73);
 }

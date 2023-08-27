@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+    .gallery {
+      width: 90%;
+      margin: 30px auto;
+    }
+  
+    .gallery > img {
+      border-width: 5px;
+    }
+  
+    .para p {
+      font-size: 16px;
+      margin: 20px;
+    }
+  }

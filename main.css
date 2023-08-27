@@ -69,7 +69,10 @@ header {
   margin: 0;
   border-radius: 32px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 #navbar-animmenu ul li {
@@ -82,7 +85,7 @@ header {
   text-decoration: none;
   font-size: 20px; /* Reduce font size */
   line-height: 30px; /* Adjust line height */
-  padding: 2px 15px; /* Adjust padding */
+  padding: -9px 15px; /* Adjust padding */
   transition: color 0.6s, transform 0.5s;
   position: relative;
 }
@@ -991,7 +994,7 @@ button:active {
 {
   background: transparent;
   margin-top: 100px;
-  margin-left: 100px;
+  margin-left: 60px;
   margin-bottom: 100px;
 }
 

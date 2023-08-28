@@ -45,3 +45,15 @@ window.onload = function() {
     //     alert("An error occurred while sending the email.");
     //   }
     // });
+    const popupButton = document.getElementById('popupButton');
+    const popup = document.getElementById('popup');
+    const closePopupButton = document.getElementById('closePopup');
+    
+    popupButton.addEventListener('click', () => {
+      popup.style.display = 'block';
+    });
+    
+    closePopupButton.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+    

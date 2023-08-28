@@ -51,7 +51,6 @@
                       </video>
                     </div> -->
               </div>
-              
           </div>
       </section>
       <section id="listeners">
@@ -69,7 +68,15 @@
                           <div class="button__drow1"></div>
                           <div class="button__drow2"></div>
                       </a>
-
+                      <div class="popup" id="popup">
+                        <div class="popup-content">
+                          <h2>Pop-up Content</h2>
+                          <p>This is the content of the pop-up window.</p>
+                          <button id="closePopup">Close</button>
+                        </div>
+                      </div>
+                    
+                      <script src="script.js"></script>
                   </div>
               </div>
           </div>
@@ -301,9 +308,9 @@
          </div>
           <br>
           <form action="#" method="post"class="form-contact">
-        <input type="text" name="name" required placeholder="Enter your name....">
-        <input type="email" name="email" required placeholder="Enter your email-id.....">
-        <input type="text" required placeholder="Go ahead, We are listening" class="form-bn"  >
+        <input id="name" type="text" name="name" required placeholder="Enter your name....">
+        <input id="email" type="email" name="email" required placeholder="Enter your email-id.....">
+        <input id="message" type="text" required placeholder="Go ahead, We are listening" class="form-bn"  >
         <input type="submit" name="submit" value="submit"  id="button">
         <!-- <button class="onclic validate">SUBMIT</button> -->
       </form>

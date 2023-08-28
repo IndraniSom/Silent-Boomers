@@ -47,6 +47,7 @@ In this section, we have provided a form where the users can login their Gmail a
 - We are currently working on the design of the Tutorial Section.
 - We are trying to make a chat section under the communuty sections and we trying to add a speech to text convertor to reduce the hassle of typing.
 
+
 ## 💻Built with
 This project has been bulit using:: 
 
@@ -81,7 +82,11 @@ This project has been bulit using::
 
 - Footer
 
+## Tracks
 
+- Best All Girls team
+- Best implementation of UI/UX
+- Best Project Workflow
 
 ## Contributing
 

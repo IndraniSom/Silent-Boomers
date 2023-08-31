@@ -56,4 +56,18 @@ window.onload = function() {
     closePopupButton.addEventListener('click', () => {
       popup.style.display = 'none';
     });
+    $('#insert').click(function(){
+      Swal.fire(
+        'title: Helpline Numbers!,',
+        'TOLL FREE : 1800 267 8780,' ,
+        'Bengaluru :  96322 44568, 97405 52261 ,',
+        'Chennai :     044 26210363,',
+        'Delhi NCR : 84483 17316,',
+        
+        'Kolkata :   92323 82936, 91635 09818',
+        'Mumbai : 022 61381111, 91520 17120',
+        'Pune :     1800 267 8780',
+
+      )
+    })
     

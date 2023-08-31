@@ -75,9 +75,13 @@ header {
     justify-content: space-evenly;
     flex-flow: row;
     align-items: center;
+    float:right;
+    margin-right:20px;
 }
 
 #navbar-animmenu ul li {
+  display:inline-block;
+  line-height:80px;
   list-style-type: none;
   background: linear-gradient(180deg, rgba(51, 45, 75, 0.00) 100%);
 }
@@ -123,7 +127,14 @@ header {
     position: relative;
     margin-left: 2rem;
 }
-
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
 .signup-btn {
   margin-left: 10px; /* Add some spacing between buttons */
 }
@@ -150,6 +161,17 @@ header {
   left: 50%; /* Move to the horizontal center */
   transform: translateX(-50%); /* Adjust for centering */
 }
+.checkbtn{
+  font-size:30px;
+  color:white;
+  float:right;
+  line-height:80px;
+  cursor: pointer;
+  display:none;
+}
+#check{
+  display:none;
+}
 /* Parallax section styling */
 .parallax {
   width: 100%;
@@ -158,7 +180,7 @@ header {
   background-attachment: fixed;
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-size: auto 80%;
+  background-size: auto 100%;
   background-image: url(./home/Group40.png);
 }
 

@@ -200,6 +200,7 @@ a:hover,a.active{
   background-repeat: no-repeat;
   background-size: auto 100%;
   
+  
 }
 
 #listeners
@@ -538,7 +539,8 @@ a:hover,a.active{
     flex-direction: column;
 }
 .waviy3 {
-  
+  align-items: center;
+  justify-content: center;
   background: transparent;
 }
 .waviy3 span {
@@ -548,7 +550,8 @@ a:hover,a.active{
   color: #fff;
   text-transform: uppercase;
   animation: flip 2s infinite;
-  animation-delay: calc(.2s * var(--i))
+  animation-delay: calc(.2s * var(--i));
+  align-items: center;
 }
 @keyframes flip {
   0%, 100% {
@@ -567,7 +570,7 @@ h1 {
 p {
 	font-size: max(10pt, 2.5vmin);
 	line-height: 1.4;
-	color: #0e390e;
+	color: #eff5ef;
 	margin-bottom: 1.5rem;
   background: transparent;
 }
@@ -889,6 +892,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .videocontainer{
   display:flex;
   margin-top:60px;
+  align-items: center;
 }
 
 
@@ -990,6 +994,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 .waviy {
   position: relative;
+  align-items: center;
+  justify-content: center;
 }
 .waviy span {
   position: relative;
@@ -1018,10 +1024,12 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   position: relative;
   margin-top: 50px;
   margin-left: 450px;
+  align-items: center;
+  justify-content: center;
 }
 .waviy2 span {
   position: center;
-  display: inline-block;
+  display: inline-flex;
   font-size: 40px;
   color: #fff;
   text-transform: uppercase;
@@ -1246,7 +1254,7 @@ button:active {
   padding: 40px 0;
   min-height: 100vh;
   justify-content: center;
-  align-items: center;
+  
   background:transparent;
   flex-direction: column;
 }
@@ -1264,8 +1272,8 @@ button:active {
 }
 
 .video-container2 video {
-  max-width: 90%;
-  max-height: 40%;
+  max-width: 100%;
+  max-height: 100%;
 }
 .video-container2 {
   flex: 1;
@@ -1280,8 +1288,8 @@ button:active {
 }
 
 .video-container3 video {
-  max-width: 90%;
-  max-height: 40%;
+  max-width: 100%;
+  max-height: 100%;
 }
 .video-container3 {
   flex: 1;
@@ -1296,7 +1304,7 @@ button:active {
 }
 
 .video-container4 video {
-  max-width: 90%;
+  max-width: 100%;
   max-height: 40%;
 }
 .video-container4 {
@@ -1312,8 +1320,8 @@ button:active {
 }
 
 .video-container1 video {
-  max-width: 90%;
-  max-height: 40%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .new_footer_area {

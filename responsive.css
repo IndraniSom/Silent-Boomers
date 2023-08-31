@@ -83,3 +83,18 @@
     max-width: 80%;
   }
 }
+
+@media(max-width: 1000px) {
+ .videocontainer{
+  display: block;
+ }
+ .video-container1,.video-container2,.video-container3,.video-container4{
+  height:80px;
+  width:40%;
+ }
+
+ 
+.waivy,.waivy1,.waivy2,.waivy3{
+  font-size: 1 rem;
+}
+}

@@ -1,5 +1,5 @@
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   #navbar-animmenu ul {
     flex-flow: column;
     background-color: rgba(0, 0, 0, 0.9);
@@ -69,7 +69,7 @@
 
 
 /* Media Query for Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   #home .head {
       width: 90%;
       padding: 10px;
@@ -80,7 +80,7 @@
   }
   
   .parallax {
-    max-width: 80%;
+    width:20%;
   }
 }
 
@@ -96,5 +96,11 @@
  
 .waivy,.waivy1,.waivy2,.waivy3{
   font-size: 1 rem;
+}
+.container{
+  display: block;
+}
+.profile{
+  display: block;
 }
 }

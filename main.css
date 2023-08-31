@@ -208,6 +208,10 @@ a:hover,a.active{
     width: 793px;
     height: 512px;
     flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    
+  
     
 }
 .parallax-container {
@@ -249,6 +253,9 @@ a:hover,a.active{
 
 .center-container {
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  display:flex;
 }
 .img2 {
   width: 50%;
@@ -275,7 +282,7 @@ a:hover,a.active{
 .button{
   position : relative ;
   z-index : 1 ;
-  width : 240px ;
+  width : 200px ;
   height : 40px ;
   text-decoration : none ;
   font-size : 14px ; 
@@ -902,6 +909,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   background: transparent;
   margin-bottom:231px;
   text-align:center;
+  align-items: center;
+  justify-content: center;
 }
 .gallery {
   --d: 10s;
@@ -1022,10 +1031,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 .waviy2 {
   position: relative;
-  margin-top: 50px;
-  margin-left: 450px;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  
 }
 .waviy2 span {
   position: center;

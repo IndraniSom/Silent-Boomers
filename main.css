@@ -1139,14 +1139,19 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 .form-container form{
   border-radius: 10px;
-  box-shadow: rgba(128, 36, 146, 0.282) 0px 0px 10px 10px;
-  background: rgb(186 203 208);
+  /* box-shadow: rgba(128, 36, 146, 0.282) 0px 0px 10px 10px; */
+  background: rgb(86 103 107 / 35%);
   text-align: center;
   width: 515px;
   height: 472px;
   margin-top: 102px;
   margin-left: -35px;
-
+  /* background: rgba( 255, 255, 255, 0.35 ); */
+box-shadow: rgb(149 150 160 / 37%) 0px 8px 32px 0px;
+backdrop-filter: blur( 14.5px );
+-webkit-backdrop-filter: blur( 14.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 
@@ -1155,7 +1160,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
  padding:10px 15px;
  font-size: 17px;
  margin:8px 0;
- background: #faf9fa;
+ background: #e9e2e9;
  border-radius: 5px;
  margin-top: 40px;
 }

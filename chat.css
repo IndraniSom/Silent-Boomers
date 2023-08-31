@@ -29,18 +29,34 @@ body, h1, h2, h3, p, ul, li {
   }
   
   .chat-header {
-    background-color: #DBD3D8;
+    background-color: rgb(214, 214, 239);
     color: #130202;
     padding: 17px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
   }
   
   .chat-messages {
-    padding: 165px;
+    padding: 223px;
     max-height: calc(100% - 80px);
     overflow-y: auto;
+    background-image: url(./chat\ section/#00135C);
 }
   
-  
+a {
+  display: inline-block;
+  margin: 10px;
+  padding: 8px 16px;
+  background-color: #080344;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Hover effect */
+a:hover {
+  background-color: #084b78;
+}
   .message {
     margin-bottom: 10px;
     padding: 10px;
@@ -120,18 +136,18 @@ body, h1, h2, h3, p, ul, li {
     }
   
   .button:hover {
-    background-color: #2EE59D;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    background-color: #32088c;
+    box-shadow: 0px 15px 20px rgba(7, 1, 22, 0.4);
     color: #fff;
     transform: translateY(-7px);
   }
   /* Additional styling for the voice capture button */
   .voice-input {
-    padding: 145px;
+    padding: 22px 99px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #DBD3D8;
+    background-color: #d6d6ef;
     align-items: center;
   }
   

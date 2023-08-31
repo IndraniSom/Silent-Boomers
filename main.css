@@ -528,6 +528,7 @@ a:hover,a.active{
 #closePopup:hover {
   background-color: #aaa;
 }
+
 #community{
 	min-height: 100vh;
     display: grid;
@@ -543,7 +544,8 @@ a:hover,a.active{
     margin-top: 359px;
     /* margin-left: 162px; */
     /* margin-bottom: 50px; */
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
 }
 .waviy3 {
   align-items: center;

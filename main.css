@@ -29,18 +29,21 @@ i {
     margin-right: 10px;
   }
   #text {
-    font-size: 7.6vw;
+    font-size: 10 vw;
     height: 82px;
-    margin-top: 50px;
+    margin-top: 70px;
     color: rgb(183, 194, 198);
     transform: translateY(180%);
     position: absolute;
-    margin-left: 10%;
-    background: rgb(17, 6, 73);
+    margin-left:50px;
+    background:transparent;
     text-shadow: rgba(18, 17, 17, 0.3) 10px 10px 10px;
+    float:left;
   } /* ---------horizontal-navbar-menu-----------*/
   /* styles.css */
-
+.swal-text{
+  background: transparent;
+}
 body {
   margin: 0;
   padding: 0;
@@ -69,7 +72,7 @@ header {
 
 #navbar-animmenu ul {
   padding: 0px;
-    margin: 0px;
+    margin-left: 40px;
     border-radius: 32px;
     display: flex;
     justify-content: space-evenly;
@@ -131,7 +134,7 @@ label.logo{
     color: white;
     font-size: 35px;
     line-height: 80px;
-    padding: 0 100px;
+  
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -147,9 +150,16 @@ label.logo{
   background-color: #5D1FAB;
   color: #ffffff;
 }
-
+.login-signup-btn a{
+  text-decoration:none;
+  color:white;
+  background: transparent;
+}
 .login-signup-btn:hover {
   background-color: #7f3bac;
+}
+.show-dropdown {
+  margin-left: 60px;
 }
 .btn {
   border-radius: 36px;
@@ -172,16 +182,24 @@ label.logo{
 #check{
   display:none;
 }
+a:hover,a.active{
+  background-color:transparent;
+  color: rgb(7, 71, 123);
+}
+#check:checked ~ ul{
+  left:0;
+}
 /* Parallax section styling */
 .parallax {
   width: 100%;
-  margin-top: 55px;
+  margin-top: 80px;
+  background-image: url(home/Group42.png);
   min-height: 100vh;
   background-attachment: fixed;
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: auto 100%;
-  background-image: url(./home/Group40.png);
+  
 }
 
 #listeners
@@ -257,7 +275,7 @@ label.logo{
   position : relative ;
   z-index : 1 ;
   width : 240px ;
-  height : 56px ;
+  height : 40px ;
   text-decoration : none ;
   font-size : 14px ; 
   font-weight : bold ;
@@ -868,7 +886,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   color: black;
   text-align: center;
 }
-
+.videocontainer{
+  display:flex;
+  margin-top:60px;
+}
 
 
 

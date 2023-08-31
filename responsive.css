@@ -1,130 +1,85 @@
-/* Existing CSS code */
-
-/* Media query for responsive layout */
-@media screen and (max-width: 768px) {
+/* Responsive Styles */
+@media (max-width: 768px) {
   #navbar-animmenu ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #navbar-animmenu ul li {
-    margin-right: 0;
-    margin-bottom: 10px;
-    background: none;
-  }
-
-  #navbar-animmenu a:not(:only-child):after {
+    flex-flow: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
     display: none;
   }
 
-  .btn-container {
+  #navbar-animmenu ul.active {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0; /* Adjust margin for centering */
-    margin-top: 10px; /* Add spacing between buttons */
-  }
-}
-
-/* Existing CSS code */
-
-/* Media query for tablets and smaller screens */
-@media screen and (max-width: 1024px) {
-  #navbar-animmenu ul {
-    flex-direction: column;
-    align-items: center;
   }
 
   #navbar-animmenu ul li {
-    margin-right: 0;
-    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
   }
 
-  #navbar-animmenu a:not(:only-child):after {
-    display: none;
+  #navbar-animmenu ul li a {
+    padding: 10px;
+    line-height: 25px;
+    font-size: 18px;
   }
 
-  .btn-container {
+  #navbar-animmenu .checkbtn {
+    display: block;
+  }
+
+  #check:checked ~ ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  .signup-btn {
-    margin-left: 0;
-    margin-top: 10px;
   }
 }
-
-/* Media query for small screens and mobile devices */
-@media screen and (max-width: 768px) {
-  #navbar-animmenu ul {
-    padding: 0;
-    justify-content: space-evenly;
-  }
-
-  #navbar-animmenu ul li {
-    margin-bottom: 0;
-  }
-
-  #navbar-animmenu a {
-    font-size: 16px;
-    line-height: 26px;
-    padding: 6px 12px;
-  }
-
-  .btn-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-  }
-
-  .signup-btn {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  .login-signup-btn {
-    padding: 8px 18px;
-    font-size: 14px;
-  }
-}
-/* Your existing CSS code */
-
-/* Media query for small screens and mobile devices */
-@media screen and (max-width: 768px) {
-  /* ... Other responsive styles ... */
-
-  /* Styling for the toggle button */
-  .toggle-nav-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: #333;
-    cursor: pointer;
-    z-index: 999;
-  }
+/* Responsive Styles for Home Section */
+#home {
+  width: 100%;
+  height: auto;
 }
 
-@media screen and (max-width: 768px) 
-{
-    .gallery {
+.img {
+  margin-top: 10%;
+  width: 100%;
+  background-position: cover;
+  height: auto;
+}
+
+#home .head {
+  width: 90%;
+  max-width: 1096px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#text {
+  font-size: 6vw;
+  height: auto;
+  background: transparent;
+  color: rgb(183, 194, 198);
+  transform: translateY(0);
+  position: relative;
+  
+  text-shadow: rgba(18, 17, 17, 0.3) 2px 2px 2px;
+}
+
+
+/* Media Query for Responsive Styles */
+@media (max-width: 768px) {
+  #home .head {
       width: 90%;
-      margin: 30px auto;
-    }
-  
-    .gallery > img {
-      border-width: 5px;
-    }
-  
-    .para p {
-      font-size: 16px;
-      margin: 20px;
-    }
+      padding: 10px;
   }
+
+  #text {
+      font-size: 10vw;
+  }
+  
+  .parallax {
+    max-width: 80%;
+  }
+}

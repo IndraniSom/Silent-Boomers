@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="responsive.css">
-    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Silent Boomers</title>
 </head>
 <header>
           <div id="navbar-animmenu">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn" >
-              <i class="fas fa-bars" style="color: #ffffff;"><img src="bars-solid.svg" alt="" srcset=""></i>
+              <i class="fas fa-bars" style="color: #ffffff;"><img src="toggle button.jpg" alt="" srcset=""></i>
             </label>
-            <label for="" class="logo">Silent Boomers</label>
+          </input>
+            <label for="" class="logo"><b>S</b> B    </label>
               <ul class="show-dropdown main-navbar">
                   
                   <li>
-                      <a href="#Home"><i class="fas fa-tachometer-alt"></i>Home</a>
+                      <a href="#Home"><i class="fas fa-tachometer-alt"></i> Home </a>
                   </li>
                   <li class="active">
                       <a href="#listeners"><i class="far fa-address-book"></i>Listeners</a>
@@ -48,6 +49,7 @@
           <section id="Home">
           <div class="head">
               <div class="parallax">
+               
                   <div id="text"></div>
               </div>
           </div>
@@ -63,7 +65,7 @@
                       <a href="#" class="button">
                           <div class="button__line"></div>
                           <div class="button__line"></div>
-                          <span class="button__text">Click Here</span>
+                          <button class="button_text" onclick="sap()"><span class="button__text">Click Here</span></button>
                           <div class="button__drow1"></div>
                           <div class="button__drow2"></div>
                       </a>
@@ -87,6 +89,7 @@
 
 
     <section id="community">
+
       <div class="waviy3">
         <span style="--i:1">C</span>
         <span style="--i:2">O</span>
@@ -201,6 +204,7 @@
         <span style="--i:7">L</span>
         <span style="--i:8">S</span>
        </div>
+       <div class="videocontainer">
       <div class="video-container1">
         <video width="320" height="240" controls>
           <source src="production_id_4058254 (2160p).mp4" type="video/mp4">
@@ -219,6 +223,7 @@
       <div class="video-container4">
         <video width="320" height="240" controls>
           <source src="video (2160p).mp4" type="video/mp4">
+        </div>
     </section>
 
     <section id="aboutus">

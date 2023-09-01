@@ -1,15 +1,15 @@
 # Silent-Boomers
-![loginsignup](https://github.com/IndraniSom/Silent-Boomers/assets/141947844/e75d5245-9d34-405b-8188-f6ff2a4895a3)
- 
+![WhatsApp Image 2023-09-01 at 10 46 21](https://github.com/IndraniSom/Silent-Boomers/assets/141947844/d2fa88c2-d0b1-412b-ab5f-188cf029956e)
+
+ ![WhatsApp Image 2023-09-01 at 10 46 24](https://github.com/IndraniSom/Silent-Boomers/assets/141947844/0b9c1c41-9d24-4eff-97a3-620ff450113d)
+
 
 ## ❓Problem
 In today's world, we fail to give time to our grandparents and other senior citizens and as a matter of fact, they get lonely .
 
 ## 💡Solution
 So, we have come up with a solution. We are building a website named Silent Boomers, which is a platform for the senior citizens ,where they can talk to like-minded people,share their own feelings and thought about their common interests.They can even buy and sell their handmade goods.
-## Our Prototype
 
-![prototype](https://www.figma.com/file/3c7iqCP6nwrNcNOArIo3pW/Untitled?type=design&node-id=0%3A1&mode=design&t=EWx16ywRxKdLyEOI-1)
 ## 🙌Overview
 Lets talk about this works.
 

@@ -6,21 +6,65 @@
    <title>register</title>
    <link rel="stylesheet" href="style.css">
 </head>
+<!-- Your HTML and head section -->
+
 <body>
    <div class="form-container_login">
-      <form action="" method="post">
-         <h3>register here</h3>
-         <input type="text" name="name" required placeholder="enter your name">
-         <input type="email" name="email" required placeholder="enter your email">
-         <input type="password" name="password" required placeholder="enter your password">
-         <input type="password" name="cpassword" required placeholder="confirm your password">
+      <form action="process_registration.php" method="post"> <!-- Replace with your server-side processing script -->
+         <h3>Register Here</h3>
+         <input type="text" name="name" required placeholder="Enter your name">
+         <input type="email" name="email" required placeholder="Enter your email" id="emailInput">
+         <input type="password" name="password" required placeholder="Enter your password" id="passwordInput">
+         <input type="password" name="cpassword" required placeholder="Confirm your password">
          <select name="user_type">
             <option value="user">user</option>
             <option value="admin">admin</option>
          </select>
-         <input type="submit" name="submit" value="register" class="form-btn_login">
-         <p>already have accouny? <a href="login.html">log in</a></p>
+         <input type="submit" name="submit" value="Register" class="form-btn_login">
+         <p>Already have an account? <a href="login.html">Log in</a></p>
       </form>
    </div>
+   <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+      import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+    
+      const firebaseConfig = {
+        apiKey: "AIzaSyBeGbEyeABstPgL91W14LMTp1jJ4FyDzAk",
+        authDomain: "silent-boomers.firebaseapp.com",
+        projectId: "silent-boomers",
+        storageBucket: "silent-boomers.appspot.com",
+        messagingSenderId: "835608968262",
+        appId: "1:835608968262:web:f66d73cbf03a15561b9e47",
+        measurementId: "G-BWTX52V0PH"
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      
+      const auth = getAuth();
+
+      // Event listener for the form submit button
+      document.querySelector("form").addEventListener("submit", function(event) {
+         event.preventDefault(); // Prevent default form submission
+
+         const email = document.getElementById("emailInput").value;
+         const password = document.getElementById("passwordInput").value;
+
+         // Register user with Firebase
+         createUserWithEmailAndPassword(auth, email, password)
+         .then((userCredential) => {
+            const user = userCredential.user;
+            console.log(user);
+            alert("Registration successful!");
+         })
+         .catch((error) => {
+            const errorMessage = error.message;
+            console.log(errorMessage);
+            alert(errorMessage);
+         });
+      });
+   </script>
 </body>
+
 </html>

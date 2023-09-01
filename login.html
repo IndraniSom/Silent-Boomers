@@ -3,23 +3,77 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>login</title>
+   <title>Login</title>
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <div class="form-container_login">
-      <form action="" method="post">
-         <h3>login here</h3>
-         <input type="text" name="name" required placeholder="enter your name">
-         <input type="email" name="email" required placeholder="enter your email">
-         <input type="password" name="password" required placeholder="enter your password">
+      <form> <!-- Replace with your server-side processing script -->
+         <h3>Login Here</h3>
+         <input type="email" name="email" required placeholder="Enter your email" id="login_email">
+         <input type="password" name="password" required placeholder="Enter your password" id="login_password">
          <select name="user_type">
             <option value="user">user</option>
             <option value="admin">admin</option>
          </select>
-         <input type="submit" name="submit" value="login" class="form-btn_login">
-         <p>dont have accouny? <a href="register.html">register here</a></p>
+         <input type="submit" name="submit" value="Login" class="form-btn_login"id="login">
+         <p>Don't have an account? <a href="register.html">Register here</a></p>
       </form>
    </div>
+   <button id="logout" style="display: none;">Logout</button>
+   <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+      import { getAuth, signInWithEmailAndPassword, signOut }  from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+
+      // Your Firebase configuration here
+      const firebaseConfig = {
+        apiKey: "AIzaSyBeGbEyeABstPgL91W14LMTp1jJ4FyDzAk",
+        authDomain: "silent-boomers.firebaseapp.com",
+        projectId: "silent-boomers",
+        storageBucket: "silent-boomers.appspot.com",
+        messagingSenderId: "835608968262",
+        appId: "1:835608968262:web:f66d73cbf03a15561b9e47",
+        measurementId: "G-BWTX52V0PH"
+      };
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth();
+
+      document.addEventListener("DOMContentLoaded", function() {
+   // Login
+   document.querySelector(".form-container_login form").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const email = document.getElementById("login_email").value;
+      const password = document.getElementById("login_password").value;
+
+      signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+         const user = userCredential.user;
+         console.log(user);
+         alert(`${user.email} Login successful!`);
+         document.getElementById('logout').style.display = 'block';
+         window.location.href = "index.html";
+         
+      })
+      .catch((error) => {
+         const errorMessage = error.message;
+         console.log(errorMessage);
+         alert(errorMessage);
+      });
+   });
+
+   // Logout
+   document.getElementById("logout").addEventListener("click", function() {
+      signOut(auth).then(() => {
+         console.log('Sign-out successful.');
+         alert('Sign-out successful.');
+         document.getElementById('logout').style.display = 'none';
+      }).catch((error) => {
+         console.log('An error happened while signing out.');
+      });
+   });
+});
+
+   </script>
 </body>
 </html>

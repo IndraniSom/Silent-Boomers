@@ -80,7 +80,7 @@
   }
   
   .parallax {
-    width:20%;
+   background: #0a55a5c3;
   }
 }
 
@@ -92,8 +92,13 @@
   height:80px;
   width:40%;
  }
-
- 
+#contactus{
+  margin-top:700px;
+}
+.form-contact,.form-container form .form-bn{
+  height:20%;
+  width:20%;
+} 
 .waivy,.waivy1,.waivy2,.waivy3{
   font-size: 1 rem;
 }
@@ -103,4 +108,117 @@
 .profile{
   display: block;
 }
+.para{
+  display:none;
 }
+}
+/* Add media queries for responsive home section */
+@media (max-width: 768px) {
+  .form-contact,.form-container form .form-bn{
+    height:20%;
+    width:20%;
+  } 
+  .home {
+    padding: 80px 20px;
+  }
+
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-text {
+    margin-bottom: 30px;
+  }
+
+  .home-btn {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-contact,.form-container form .form-bn{
+    height:20%;
+    width:20%;
+  } 
+  .home-text h1 {
+    font-size: 24px;
+  }
+
+  .home-text p {
+    font-size: 16px;
+  }
+
+  .home-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+/* Add media queries for responsive contact us section */
+@media (max-width: 768px) {
+  .contact {
+    padding: 80px 20px;
+  }
+
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-form button {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form input[type="text"],
+  .contact-form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+/* Add media queries for responsive contact us section */
+@media (max-width: 1000px) {
+  .contact {
+    padding: 80px 20px;
+  }
+
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-form button {
+    align-self: flex-start;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .contact-form input[type="text"],
+  .contact-form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+

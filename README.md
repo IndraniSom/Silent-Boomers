@@ -7,15 +7,17 @@ In today's world, we fail to give time to our grandparents and other senior citi
 
 ## 💡Solution
 So, we have come up with a solution. We are building a website named Silent Boomers, which is a platform for the senior citizens ,where they can talk to like-minded people,share their own feelings and thought about their common interests.They can even buy and sell their handmade goods.
+## Our Prototype
 
+![prototype](https://www.figma.com/file/3c7iqCP6nwrNcNOArIo3pW/Untitled?type=design&node-id=0%3A1&mode=design&t=EWx16ywRxKdLyEOI-1)
 ## 🙌Overview
 Lets talk about this works.
 
 So to begin with,in this website, we are using speech to text converter.
-
-Firstly, we have the Home page.
-
-Second, we have the Listeners section where they can type their worries and thoughts.
+## 🏠Home
+First, we have the Home page.
+## 🎧Listeners
+Second, we have the Listeners section where they can share their worries and thoughts by calling the helpline number.
 
 Next, we have the Community section.There are various communities under this section: 
 ### 📖Bookworm community:
@@ -81,6 +83,18 @@ This project has been bulit using::
 - Contact Us
 
 - Footer
+  ## Contributing
+  If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "improvement". Don't forget to star this project!!
+
+-Fork the Project
+
+-Create your Feature Branch (git checkout -b feature/Feature1)
+
+-Commit your Changes ( git commit -m 'Add Feature 1')
+
+-Push to the Branch (git push origin feature/Feature1)
+
+-Open a Pull Request
 
 ## Tracks
 
@@ -94,5 +108,17 @@ Made with ❤️ by team <em>Loading Minds</em>:
 
  [Indrani Som](https://github.com/IndraniSom)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Neelakshi Das](https://github.com/bluecoder2003)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Sritama Karfa](https://github.com/valentra )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ Heya Banerjee ](https://github.com/HeyaBanerjee)
 
+<!--[![IndraniSom GitHub stats](https://github-readme-stats.vercel.app/api?username=IndraniSom&show_icons=true&theme=radical)](https://github.com/IndraniSom/github-readme-stats)
+<!-- Add a header or introductory text here -->
 
-## 
+<!--[![bluecoder2003 GitHub stats](https://github-readme-stats.vercel.app/api?username=bluecoder2003&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
+<!-- Add a header or introductory text here -->
+
+<!--[![Sritama's GitHub stats](https://github-readme-stats.vercel.app/api?username=valentra&show_icons=true&theme=radical)](https://github.com/valentra/github-readme-stats)
+<!-- Add a header or introductory text here -->
+
+<!--[![Heya's GitHub stats](https://github-readme-stats.vercel.app/api?username=HeyaBanerjee&show_icons=true&theme=radical)](https://github.com/HeyaBanerjee/github-readme-stats)-->
+
+
+
+

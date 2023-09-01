@@ -63,7 +63,7 @@ header {
 /* Navigation menu styling */
 #navbar-animmenu {
   overflow: hidden;
-  padding: 12px 0;
+  padding: 0px 0;
   background: transparent;
   /* border-radius: 32px; */
   width: 100%;
@@ -196,7 +196,7 @@ a:hover,a.active{
 /* Parallax section styling */
 .parallax {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 40px;
   background-image: url(home/Group42.png);
   min-height: 100vh;
   background-attachment: fixed;
@@ -266,7 +266,8 @@ a:hover,a.active{
   height: auto; /* Maintain aspect ratio */
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  margin-top: -30px;
+  margin-top:-40px;
+  margin-left:50%;
 }
 
 :root{
@@ -1055,8 +1056,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
 }
 
-.container {
-  display: flex;
+  .container {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -1066,8 +1067,9 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     margin: 0 auto;
     background: transparent;
     height: 20%;
-    
-}
+    margin-top: 213px;
+  }
+
 
 .profile {
   position: relative;
